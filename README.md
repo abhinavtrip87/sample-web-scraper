@@ -2,10 +2,10 @@
 
 Sample web scraper is a Spring Boot web application, aimed at parsing dynamic web pages from Amazon App Store. It derives the following information regarding a particular app from Amazon App Store :
 
-*App name
-*App version
-*Changelog for the current version (the "Latest updates" section)
-*Release date
+* App name
+* App version
+* Changelog for the current version (the "Latest updates" section)
+* Release date
 
 ## Getting Started
 
