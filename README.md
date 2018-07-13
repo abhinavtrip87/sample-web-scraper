@@ -37,6 +37,13 @@ mvn spring-boot:run
 ```
 http://localhost:8080/amazon/appstore/details
 ```
+
+OR
+
+Running the curl directly from terminal. Eg.
+```
+curl -d "url=https://www.amazon.com/Facebook-Messenger/dp/B00KZ6WRAA" -X POST http://localhost:8080/amazon/appstore/details -v
+```
 4. Enter valid Amazon App Store's app URL eg: http://www.amazon.com/Instagram/dp/B00KZP2DTQ/
 
 5. Details will be listed in the subsequent response. If there was a problem, an error page will be displayed instead.
