@@ -31,7 +31,7 @@ Import => Maven => Exisiting maven projects
 mvn spring-boot:run
 ```
 2. Running in eclipse. (Optional)
-- Search for SpringBootScraperApplication.java --> Right Click --> Run as Java Application
+- Search for *SpringBootScraperApplication.java* --> Right Click --> Run as Java Application
 
 3. Open up any web browser (Chrome, Safari etc.) and access the below URL for user interface
 ```
