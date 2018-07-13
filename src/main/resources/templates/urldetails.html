@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en" th:fragment="head">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link
+	href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css"
+	th:href="@{/webjars/bootstrap/3.3.4/css/bootstrap.min.css}"
+	rel="stylesheet" media="screen" />
+
+<script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"
+	th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>
+</head>
+<body>
+	<div class="container">
+		<div th:if="${not #lists.isEmpty(urldetails)}">
+			<h2>Amazon AppStore URL Details</h2>
+			<table class="table table-striped">
+				<tr>
+					<th>URL</th>
+					<th>App name</th>
+					<th>App version</th>
+					<th>Changelog</th>
+					<th>Release date</th>
+				</tr>
+				<tr th:each="urldetail : ${urldetails}">
+					<td th:text="${urldetail.url}">URL</td>
+					<td th:text="${urldetail.appName}">App name</td>
+					<td th:text="${urldetail.version}">App version</td>
+					<td th:text="${urldetail.changeLog}">Changelog</td>
+					<td th:text="${urldetail.releaseDate}">Release date</td>
+				</tr>
+			</table>
+
+		</div>
+	</div>
+
+</body>
+</html>

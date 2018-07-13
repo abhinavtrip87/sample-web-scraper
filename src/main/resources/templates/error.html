@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link
+	href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css"
+	th:href="@{/webjars/bootstrap/3.3.4/css/bootstrap.min.css}"
+	rel="stylesheet" media="screen" />
+
+<script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"
+	th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>
+
+</head>
+<body>
+	<h2>Amazon Web Scraper Encountered an error!. Please check URL and
+		try again...</h2>
+	<table class="table table-striped">
+		<tr>
+			<td>Date</td>
+			<td th:text="${timestamp}" />
+		</tr>
+		<tr>
+			<td>Path</td>
+			<td th:text="${path}" />
+		</tr>
+		<tr>
+			<td>Error</td>
+			<td th:text="${error}" />
+		</tr>
+		<tr>
+			<td>Status</td>
+			<td th:text="${status}" />
+		</tr>
+		<tr>
+			<td>Message</td>
+			<td th:text="${message}" />
+		</tr>
+		<tr>
+			<td>Exception</td>
+			<td th:text="${exception}" />
+		</tr>
+	</table>
+</body>
+</html>

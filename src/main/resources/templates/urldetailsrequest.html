@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>AMAZON APP STORE WEB SCRAPER LANDING</title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link
+	href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css"
+	th:href="@{/webjars/bootstrap/3.3.4/css/bootstrap.min.css}"
+	rel="stylesheet" media="screen" />
+
+<script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"
+	th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>
+
+</head>
+<body>
+	<div id="container" class="container">
+		<div class="col-sm-10 offset-sm-1 text-center">
+			<form action="#" th:action="@{/amazon/appstore/details}" th:object="${urldetailsrequest}" method="post">
+				<div class="form-group">
+					<h1 class="display-2">Welcome to Amazon App Store URLWebScraper</h1>
+					<input type="url" th:field="*{url}" class="form-control" id="url" aria-describedby="URLHelp"
+						placeholder="Enter Amazon App Store URL"> <small id="URLHelp" class="form-text text-muted">You want it, I got it!!</small>
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+
+		</div>
+	</div>
+</body>
+</html>
