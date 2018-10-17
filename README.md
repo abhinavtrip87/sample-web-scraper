@@ -1,4 +1,6 @@
-# sample-web-scraper [![Build Status](https://travis-ci.com/abhinavtrip87/sample-web-scraper.svg?branch=master)](https://travis-ci.com/abhinavtrip87/sample-web-scraper)
+# sample-web-scraper 
+[![Build Status](https://travis-ci.com/abhinavtrip87/sample-web-scraper.svg?branch=master)](https://travis-ci.com/abhinavtrip87/sample-web-scraper)  
+image:https://travis-ci.com/abhinavtrip87/sample-web-scraper.svg?branch=master["Build Status", link="https://travis-ci.com/abhinavtrip87/sample-web-scraper"]
 
 Sample web scraper is a Spring Boot web application, aimed at parsing dynamic web pages from Amazon App Store. It derives the following information regarding a particular app from Amazon App Store :
 
