@@ -40,7 +40,7 @@ http://localhost:8080/amazon/appstore/details
 4. Enter valid Amazon App Store's app URL eg: http://www.amazon.com/Instagram/dp/B00KZP2DTQ/
 
 5. Details will be listed in the subsequent response. If there was a problem, an error page will be displayed instead.
-(http://recordit.co/2bjJwhMGcU)
+![](http://recordit.co/2bjJwhMGcU)
 
 OR
 
